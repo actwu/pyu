@@ -4,7 +4,7 @@
 @echo off
 REM python setup wrapper
 
-IF "%1"=="py" IF "%2"=="up" (
+IF "%1"=="pyu" IF "%2"=="up" (
 python --version >nul 2>&1
 IF ERRORLEVEL 1 (
 echo "Python not found, download from https://www.python.org/downloads/"
