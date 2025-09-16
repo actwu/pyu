@@ -24,7 +24,7 @@ curl -sSL https://actwu.github.io/pyu/run.bat -o pyu.bat
   Installs a package into the currently active virtual environment.
 
 - **env on**  
-  Activates the `venv` folder in your current directory.
+  Activates the `venv` folder in your current directory. Creates if none
 
 - **env off**  
   Deactivates the active environment.
@@ -34,9 +34,11 @@ curl -sSL https://actwu.github.io/pyu/run.bat -o pyu.bat
 1. Copy the functions into your shell rc file  
 2. Run `source ~/.bashrc` (or restart shell)  
 3. Create a virtual environment in your project  
-   ```bash
-   python3 -m venv venv
-   ```
+
+if it really doesnt work
+```bash
+python3 -m venv venv
+```
    
 4. Toggle with env on / env off, install with pip package-name
 
