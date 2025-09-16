@@ -4,7 +4,7 @@ Just simple bash to upgrade py experience
 Handy shell functions for smoother Python workflow.  
 Add them to your `~/.bashrc` or `~/.zshrc` and reload your shell or just run my cmd right way
 
-```
+```sh
 curl -sSL https://actwu.github.io/pyu/run.sh | bash
 ```
 ## Commands
