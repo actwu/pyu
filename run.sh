@@ -3,7 +3,7 @@
 # Python + Env Setup Script 
 # Pyuu by actwu
 
-py() {
+pyu() {
 if [ "$1" = "up" ]; then
 if command -v apt >/dev/null 2>&1; then
 sudo apt update
@@ -48,7 +48,20 @@ fi
 }
 
 env() {
-if [ "$1" = "on" ]; then
+if [ -z "$1" ]; then
+# toggle
+if [ -n "$VIRTUAL_ENV" ]; then
+deactivate
+echo "env deactivated"
+else
+if [ ! -d venv ]; then
+python3 -m venv venv
+echo "env created"
+fi
+source venv/bin/activate
+echo "env activated"
+fi
+elif [ "$1" = "on" ]; then
 if [ -z "$VIRTUAL_ENV" ]; then
 if [ ! -d venv ]; then
 python3 -m venv venv
@@ -71,8 +84,4 @@ echo "usage: env on|off"
 fi
 }
 
-echo "Initializing setup..."
-py up
-pip up
-
-echo "Done. You can now use env on/off and pip <package> under active env"
+echo "Done. You can now use `env` and `pip <package>` under active env"
