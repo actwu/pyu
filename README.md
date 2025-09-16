@@ -7,6 +7,11 @@ Add them to your `~/.bashrc` or `~/.zshrc` and reload your shell or just run my 
 ```sh
 curl -sSL https://actwu.github.io/pyu/run.sh | bash
 ```
+
+Windows
+```sh
+curl -sSL https://actwu.github.io/pyu/run.bat -o pyu.bat
+```
 ## Commands
 
 - **py up**  
