@@ -1,3 +1,6 @@
+:: Python + Env Setup Script
+:: Pyuu by actwu
+
 @echo off
 REM python setup wrapper
 
