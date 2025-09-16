@@ -17,7 +17,7 @@ curl -sSL https://actwu.github.io/pyu/run.bat -o pyu.bat
 ```
 ## Commands
 
-- **py up**  
+- **pyu up**  
   Installs Python, pip, and venv support (works with apt, pacman, pamac, flatpak).
 
 - **pip up**  
@@ -25,6 +25,9 @@ curl -sSL https://actwu.github.io/pyu/run.bat -o pyu.bat
 
 - **pip <package>**  
   Installs a package into the currently active virtual environment.
+  
+- **env**
+  Toggles it
 
 - **env on**  
   Activates the `venv` folder in your current directory. Creates if none
