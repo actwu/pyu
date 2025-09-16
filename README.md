@@ -35,7 +35,7 @@ curl -sSL https://actwu.github.io/pyu/run.bat -o pyu.bat
 2. Run `source ~/.bashrc` (or restart shell)  
 3. Create a virtual environment in your project  
    ```bash
-   
+   python3 -m venv venv
    ```
    
 4. Toggle with env on / env off, install with pip package-name
