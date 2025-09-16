@@ -50,6 +50,10 @@ fi
 env() {
 if [ "$1" = "on" ]; then
 if [ -z "$VIRTUAL_ENV" ]; then
+if [ ! -d venv ]; then
+python3 -m venv venv
+echo "env created"
+fi
 source venv/bin/activate
 echo "env activated"
 else
