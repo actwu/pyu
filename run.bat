@@ -13,15 +13,18 @@ exit /b
 )
 python -m ensurepip --upgrade
 python -m pip install --upgrade pip
+IF NOT EXIST venv (
 python -m venv venv
+echo "env created"
+)
 echo "Done py up"
 exit /b
 )
 
 IF "%1"=="env" IF "%2"=="on" (
-IF NOT EXIST venv\Scripts\activate.bat (
-echo "venv not found, create with py up first"
-exit /b
+IF NOT EXIST venv (
+python -m venv venv
+echo "env created"
 )
 call venv\Scripts\activate.bat
 echo "env activated"
